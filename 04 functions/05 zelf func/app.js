@@ -2,10 +2,13 @@ class App
 {
     runApplication()
     {
-        console.log("test")
-        this.marioFunction();
-        this.funnyFunction();
-        
+        this.marioFunction()
+
+        let funnyResult = this.funnyFunction();
+        console.log(funnyResult);
+
+        let rekenResult = this.rekenFunction(9, 9);
+        console.log(rekenResult);
     }
 
     marioFunction()
@@ -13,15 +16,14 @@ class App
         console.log("MARIO!!");
     }
 
-    funnyFunction(funny)
+    funnyFunction()
     {
-        console.log("BWAHAHA!!!");
-        return funny;
+        return "BWAHAHA!!!";
     }
 
-    rekenFunction(y)
+    rekenFunction(x,y)
     {
-
+        return x + y;
     }
 }
 
